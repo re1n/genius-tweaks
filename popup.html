@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link href="popup.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="h5 mt-3 text-center">
+			Genius Tweaks
+		</div>
+		<div class="mt-3">
+			<div id="feed-qa-toggle" class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" role="switch" id="feed-qa-toggle-switch">
+				<label class="form-check-label"	for="feed-qa-toggle-switch">Hide Q&A in feed (may break on Bagon)</label>
+			</div>
+		</div>
+		<div class="mt-3">
+			<div id="global-toggle" class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" role="switch" id="global-toggle-switch">
+				<label class="form-check-label"	for="global-toggle-switch">Hide IQ</label>
+			</div>
+			<div id="hover-toggle" class="form-check form-switch ms-3">
+				<input class="form-check-input" type="checkbox" role="switch" id="hover-toggle-switch">
+				<small><label class="form-check-label"	for="hover-toggle-switch">Show IQ when hovering over name</label></small>
+			</div>
+			<div id="profile-toggle" class="form-check form-switch ms-3">
+				<input class="form-check-input" type="checkbox" role="switch" id="profile-toggle-switch">
+				<small><label class="form-check-label"	for="profile-toggle-switch">Show IQ on user profiles</label></small>
+			</div>
+		</div>
+		<div class="mt-3">
+			<div id="red-tate-toggle" class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" role="switch" id="red-tate-toggle-switch">
+				<label class="form-check-label"	for="red-tate-toggle-switch">Make red tates appear grey (Ed+ only)</label>
+			</div>
+		</div>
+	</div>
+    <script src="popup.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
