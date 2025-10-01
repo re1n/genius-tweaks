@@ -88,11 +88,18 @@ function getFirstGradientRGB(className) {
     });
 })();
 
+function getTextColorForRGB(rgbString) {
+  let [r, g, b] = rgbString.match(/\d+/g).map(Number);
+  let brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+  return brightness > 128 ? "#000" : "#fff";
+};
+
 function redTatesGrey() {
 	const firstGradient = getFirstGradientRGB(findExactLinearGradients());
-	updateCSSRule(".daUKgp", "background-color", "rgb(233, 233, 233)");
-	updateCSSRule(".izNXTm", "background-color", firstGradient);
-	updateCSSRule(".izNXTm", "color", "#fff");
+	updateCSSRule(".bfCJnP", "background-color", "rgb(233, 233, 233)");
+	updateCSSRule(".hhkAPg", "background-color", firstGradient);
+	updateCSSRule(".hhkAPg", "color", getTextColorForRGB(firstGradient));
 };
 
 const elements = [
