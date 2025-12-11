@@ -97,9 +97,9 @@ function getTextColorForRGB(rgbString) {
 
 function redTatesGrey() {
 	const firstGradient = getFirstGradientRGB(findExactLinearGradients());
-	updateCSSRule(".bfCJnP", "background-color", "rgb(233, 233, 233)");
-	updateCSSRule(".hhkAPg", "background-color", firstGradient);
-	updateCSSRule(".hhkAPg", "color", getTextColorForRGB(firstGradient));
+	updateCSSRule(".hKCjTS", "background-color", "rgb(233, 233, 233)");
+	updateCSSRule(".kGEDax", "background-color", firstGradient);
+	updateCSSRule(".kGEDax", "color", getTextColorForRGB(firstGradient));
 };
 
 const elements = [
